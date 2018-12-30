@@ -1,0 +1,21 @@
+name: AllPlayerKicker
+main: biz.yama2211.pk.Main
+version: 1.0
+description: すべてのプレイヤーをkickします
+commands:
+  allkick:
+    description: すべてのプレイヤーをkick
+    
+permissions:
+  allkick.use:
+    description: allkickの権限
+    default: op
+  allkick.ignore:
+    description: allkickで蹴られない
+    default: op
+  allkick.*:
+    description: allkickのすべての権限
+    default: op
+    children:
+      allkick.use: true
+      allkick.ignore: true
